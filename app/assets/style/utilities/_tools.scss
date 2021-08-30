@@ -1,0 +1,12 @@
+@mixin text-hide {
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -11,8 +11,7 @@
 
 // scss-docs-start import-stack
 @import "../../../node_modules/bootstrap/scss/functions";
-
-// r-插入想要改動變數區域
+// r-插入想要改動「變數」區域
 
 // r-這個檔案「更改」既有變數
 @import "./helpers/variables";
@@ -21,33 +20,6 @@
 
 // r-這個檔案「更改」既有工具變數
 @import "./helpers/utilities";
-
-// // r-自訂義工具變數
-// $utilities: map-merge(
-//   $utilities,
-//   ("object-fit": (property: object-fit,
-//       class: of,
-//       responsive: true,
-//       values: contain cover grab,
-//     ),
-//     "margin2": ( // 因為有 margin 所以用 margin2 
-//       responsive: true,
-//       property: margin,
-//       class: m,
-//       values: (
-//         100: 100px, // 新增 margin: 100px
-//         auto: auto // 覆蓋或修改  margin: auto
-//       )),
-//     "mtp":(
-//       property: margin,
-//       responsive: true,
-//       class: mt,
-//       values:(
-//         100:100px,
-//         200:200px
-//       )
-//     )
-//   ));
 
 // Optional
 // Layout & components
@@ -85,10 +57,7 @@
 // Helpers
 @import "../../../node_modules/bootstrap/scss/helpers";
 
-// Utilities
-// utilites/api 一定要在最後引入，會用到 mixins 跟 variables 定義的內容
-@import "../../../node_modules/bootstrap/scss/utilities/api";
-// scss-docs-end import-stack
+
 
 
 // 自定義區域 start
@@ -106,6 +75,15 @@
 // ------pages---------
 @import "pages/index";
 // 自定義區域 end
+
+
+
+
+
+// Utilities
+// utilites/api 一定要在最後引入，會用到 mixins 跟 variables 定義的內容
+@import "../../../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
 
 
 

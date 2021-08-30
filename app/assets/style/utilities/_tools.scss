@@ -10,3 +10,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// 文字大小／行距
+@mixin fontSize($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+// 物件寬高
+@mixin width($width, $height) {
+  width: $width;
+  height: $height;
+}

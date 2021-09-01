@@ -287,7 +287,7 @@ $spacers: (
   26: $spacer * 6.5,    // 104
   40: $spacer * 10,     // 160
   '15o': $spacer * 3.75, // 15
-  '6o':  $spacer * .375,   //  6px
+  '6o':  $spacer * .375,   // 6px
   '10o':   $spacer * .625,    // 10px
   '14o':   $spacer * .875,    // 14px
   '18o': $spacer * 1.125, // 18px
@@ -306,7 +306,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0:   0,
-  25:  25%, // r-
+  25:  25%, // r-new
   50:  50%,
   100: 100%
 ) !default;

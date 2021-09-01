@@ -7,12 +7,12 @@
 
 // scss-docs-start gray-color-variables
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #EFEFEF; // #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #707070; // #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
@@ -20,7 +20,8 @@ $black: #000 !default;
 // scss-docs-end gray-color-variables
 
 // r-custom-color start
-$gary-custom: #00000062;
+$black-200:#373A3C;
+$purple-dark: #190014;
 // r-custom-color end
 
 // fusv-disable
@@ -70,8 +71,8 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
-$secondary: $gray-600 !default;
+$primary: #630834; // $blue !default;
+$secondary: #E31277; // $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -90,7 +91,9 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "$gray-100": $gray-100
+  "white": $white,
+  "black": $black,
+  "black-200": $black-200
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -251,6 +254,7 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+$custom-grid-gutter-width: $spacer * 1.875; // $spacer * 1.5;
 // $r-spacers: (
 //   0: 0,
 //   1: $spacer * .25,
@@ -282,7 +286,14 @@ $spacers: (
   24: $spacer * 6,      // 96
   26: $spacer * 6.5,    // 104
   40: $spacer * 10,     // 160
-  15o: $spacer * 3.75  // 15
+  '15o': $spacer * 3.75, // 15
+  '6o':  $spacer * .375,   //  6px
+  '10o':   $spacer * .625,    // 10px
+  '14o':   $spacer * .875,    // 14px
+  '18o': $spacer * 1.125, // 18px
+  '30o': $spacer * 1.875,  // 30px
+  'gutter-15': $custom-grid-gutter-width / 2, // 15px
+  'gutter-30': $custom-grid-gutter-width, // 30px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -293,9 +304,12 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // Define the edge positioning anchors of the position utilities.
 
 // scss-docs-start position-map
-$position-values: (0: 0,
-  50: 50%,
-  100: 100%) !default;
+$position-values: (
+  0:   0,
+  25:  25%, // r-
+  50:  50%,
+  100: 100%
+) !default;
 // scss-docs-end position-map
 
 // Body
@@ -311,8 +325,8 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
-$link-decoration: underline !default;
+$link-color: $gray-600 !default; //$primary !default;
+$link-decoration:  none;//underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
@@ -333,7 +347,8 @@ $paragraph-margin-bottom: 1rem !default;
 // adapting to different screen sizes, for use in media queries.
 
 // scss-docs-start grid-breakpoints
-$grid-breakpoints: (xs: 0,
+$grid-breakpoints: (
+  xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -479,7 +494,8 @@ $font-sizes: (
   6: $h1-font-size, // 40
   lg: 3rem,         // 48
   xl: 4rem,         // 64
-  xxl: 4.5rem       // 72
+  xxl: 4.5rem,       // 72
+  "22o": 1.375rem
   ) !default;
   // scss-docs-end font-sizes
 
@@ -589,7 +605,8 @@ $table-bg-scale: -80% !default;
 // scss-docs-end table-variables
 
 // scss-docs-start table-loop
-$table-variants: ("primary": shift-color($primary, $table-bg-scale),
+$table-variants: (
+  "primary": shift-color($primary, $table-bg-scale),
   "secondary": shift-color($secondary, $table-bg-scale),
   "success": shift-color($success, $table-bg-scale),
   "info": shift-color($info, $table-bg-scale),
@@ -1132,7 +1149,7 @@ $card-group-margin: $grid-gutter-width * .5 !default;
 
 // Accordion
 
-// scss-docs-start accordion-variables
+// scss-docs-start accordion-variables 
 $accordion-padding-y: 1rem !default;
 $accordion-padding-x: 1.25rem !default;
 $accordion-color: $body-color !default;

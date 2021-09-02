@@ -22,3 +22,9 @@
   width: $width;
   height: $height;
 }
+
+// 背景 size 位置 置中並 cover
+@mixin banner {
+  background-size: cover;
+  background-position: center center;
+}

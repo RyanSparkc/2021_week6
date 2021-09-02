@@ -286,12 +286,12 @@ $spacers: (
   24: $spacer * 6,      // 96
   26: $spacer * 6.5,    // 104
   40: $spacer * 10,     // 160
-  '15o': $spacer * 3.75, // 15
-  '6o':  $spacer * .375,   // 6px
-  '10o':   $spacer * .625,    // 10px
-  '14o':   $spacer * .875,    // 14px
-  '18o': $spacer * 1.125, // 18px
-  '30o': $spacer * 1.875,  // 30px
+  '6o':  $spacer * .375,    // 6px
+  '10o': $spacer * .625,    // 10px
+  '14o': $spacer * .875,    // 14px
+  '15o': $spacer * .09375,  // 15px
+  '18o': $spacer * 1.125,   // 18px
+  '30o': $spacer * 1.875,   // 30px
   'gutter-15': $custom-grid-gutter-width / 2, // 15px
   'gutter-30': $custom-grid-gutter-width, // 30px
 ) !default;

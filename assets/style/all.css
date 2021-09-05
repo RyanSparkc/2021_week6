@@ -9163,7 +9163,7 @@ a {
 }
 
 .subscribe_bg {
-  background-image: url("/assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
+  background-image: url("../../assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
   height: 400px;
 }
 
@@ -9311,7 +9311,7 @@ body {
 }
 
 .back_bgpic {
-  background: url("/assets/images/people2.png");
+  background: url("../../assets/images/people2.png");
   height: 482px;
   background-size: cover;
 }

@@ -8,37 +8,6 @@
   }
 }
 
-// pad(992)
-// @include pad{
-//   .container{
-//     max-width: 940px;
-//   }
-// }
-
-// mobile(768)
-// @include mobile{
-//   .tDesign{
-//       padding: 44px 0;
-//     }
-//   .container{
-//     max-width: 100%;
-//     .tDesign_date{
-//       display: flex;
-//       flex-direction: row;
-//       align-items: flex-end;
-//       justify-content: flex-start;
-//       margin: 16px 0 8px 0;
-//     }
-//   }
-// }
-
-// mobile-s(375)
-// @include mobile-s{
-//   .design_word{
-//     margin-right: 4px;
-//   }
-// }
-
 .one_hover{
   &:hover{
     color: $secondary!important;
@@ -57,29 +26,6 @@
   }
 }
 
-// // pad(992)
-// @include pad{
-//   .container{
-//     max-width: 940px;
-//   }
-// }
-
-// // mobile(768)
-// @include mobile{
-//   .online{
-//       padding: 44px 0;
-//     }
-//   .container{
-//     max-width: 100%;
-//     .online_date{
-//       display: flex;
-//       flex-direction: row;
-//       align-items: flex-end;
-//       justify-content: flex-start;
-//       margin: 16px 0 8px 0;
-//     }
-//   }
-// }
 
 /*-------------------------------*/
 //kaohsiung 高雄設計
@@ -92,26 +38,3 @@
   }
 }
 
-// // pad(992)
-// @include pad{
-//   .container{
-//     max-width: 940px;
-//   }
-// }
-
-// // mobile(768)
-// @include mobile{
-//   .kaohsiung{
-//       padding: 44px 0;
-//     }
-//   .container{
-//     max-width: 100%;
-//     .kaohsiung_date{
-//       display: flex;
-//       flex-direction: row;
-//       align-items: flex-end;
-//       justify-content: flex-start;
-//       margin: 16px 0 8px 0;
-//     }
-//   }
-// }

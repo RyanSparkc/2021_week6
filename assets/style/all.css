@@ -9179,10 +9179,6 @@ a {
   background: #630834;
 }
 
-.back_bg2 {
-  width: 100%;
-}
-
 .back {
   padding: 24px 0 0 0;
 }
@@ -9317,7 +9313,7 @@ body {
 }
 
 .back_bg2 {
-  background-color: rgba(99, 8, 52, 0.8);
+  background-color: rgba(25, 0, 20, 0.8);
   height: 482px;
 }
 

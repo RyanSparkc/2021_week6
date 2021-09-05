@@ -1,0 +1,19 @@
+// section lick 輪播
+//swiper
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+/*   width: auto !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.card-img-top {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}

@@ -1,0 +1,27 @@
+.subscribe_bg {
+  background-image: url('../../../assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg');
+  height: 400px;
+}
+
+
+
+.subscribe_mail {
+  width: 350px;
+}
+
+.subscribe_btn {
+  background: $secondary;
+
+  &:hover {
+    background: $primary;
+  }
+
+}
+
+ .back_bg2 {
+   width: 100%;
+ }
+
+ .back {
+   padding: 24px 0 0 0;
+ }

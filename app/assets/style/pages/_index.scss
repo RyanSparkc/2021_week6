@@ -1,0 +1,48 @@
+.card_pic {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 350px;
+    height: 350px;
+  }
+
+  object-fit: cover;
+}
+
+.card_date {
+  writing-mode: vertical-lr; //垂直字體
+
+}
+
+.card_icon {
+  width: 20px;
+  height: 20px;
+
+}
+
+
+
+// section back
+.back {
+  padding: 60px 0 40px 0;
+
+  &_bgpic {
+    background: url('../../../assets/images/people2.png');
+    height: 482px;
+    background-size: cover;
+  }
+
+  &_bg2 {
+    background-color: rgba($color: $primary, $alpha: .8);
+    height: 482px;
+  }
+
+  &_people {
+    width: 128px;
+    height: 128px;
+  }
+
+  &_btn {
+    padding: 10px 38px;
+  }
+}

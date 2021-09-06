@@ -10,7 +10,10 @@ $(function () {
         slidesPerView: 3,
         spaceBetween: 30
       }
-    }
+    } // autoplay: {
+    //   delay: 5000,
+    // },
+
   });
 });
 //# sourceMappingURL=all.js.map

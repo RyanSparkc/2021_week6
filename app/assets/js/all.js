@@ -8,6 +8,9 @@ $(function () {
         slidesPerView: 3,
         spaceBetween: 30,
       },
-    }
+    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
   });
 });

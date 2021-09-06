@@ -439,7 +439,8 @@ $transition-collapse: height .35s ease !default;
 
 // stylelint-disable function-disallowed-list
 // scss-docs-start aspect-ratios
-$aspect-ratios: ("1x1": 100%,
+$aspect-ratios: (
+  "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
   "21x9": calc(9 / 21 * 100%)) !default;
@@ -452,7 +453,7 @@ $aspect-ratios: ("1x1": 100%,
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base: var(--#{$variable-prefix}font-sans-serif) !default;
@@ -501,6 +502,7 @@ $font-sizes: (
   xxl: 4.5rem,      // 72
   "22o": 1.375rem,  // 22
   "30o": 1.875rem,  // 30
+  "36o": 2.25rem,   // 36
   ) !default;
   // scss-docs-end font-sizes
 

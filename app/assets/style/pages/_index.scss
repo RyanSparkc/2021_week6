@@ -17,14 +17,11 @@
 .card_icon {
   width: 20px;
   height: 20px;
-
 }
-
-
 
 // section back
 .back {
-  padding: 60px 0 40px 0;
+  padding: 60px 0 12px 0;
 
   &_bgpic {
     background: url('../../assets/images/people2.png');
@@ -45,4 +42,5 @@
   &_btn {
     padding: 10px 38px;
   }
+
 }

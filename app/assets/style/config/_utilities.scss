@@ -607,7 +607,18 @@ $utilities: map-merge(
       values: (
         100: 100px,
         auto: auto,
-      )),
+      )
+    ),
+    "wr-mode": (
+       property: writing-mode,
+       class:wrm,
+         responsive: true,
+         values: (
+           tb: horizontal-tb,
+           lr: vertical-lr,
+           unset: unset,
+         )
+    )
     // Custom tools end
   ),
 );

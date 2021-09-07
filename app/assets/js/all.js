@@ -1,7 +1,7 @@
 $(function () {
   /*swiper 輪播外掛 */
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     spaceBetween: 30,
     breakpoints: {
       768: {

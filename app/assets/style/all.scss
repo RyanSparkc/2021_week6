@@ -14,6 +14,7 @@
 // r-插入想要改動「變數」區域
 
 // r-這個檔案「更改」既有變數
+@import "./config/customVariables";
 @import "./config/variables";
 @import "../../../node_modules/bootstrap/scss/mixins"; 
 @import "../../../node_modules/bootstrap/scss/utilities";

@@ -28,3 +28,17 @@
   background-size: cover;
   background-position: center center;
 }
+
+@mixin linkLine($bottom) {
+  padding-bottom: $bottom;
+  background: linear-gradient(to left, $secondary, $secondary);
+  background-repeat: no-repeat;
+  background-position: 0 90%;
+  background-size: 0 0.1rem;
+  transition: background-size .3s;
+
+  &:hover,
+  &.active {
+    background-size: 100% 0.1rem;
+  }
+}

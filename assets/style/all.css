@@ -9017,7 +9017,7 @@ body {
 
 body {
   line-height: 1.5;
-  font-family: "Roboto Mono", "Roboto", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 small, .small {
@@ -9301,6 +9301,68 @@ body {
 
 .back_btn {
   padding: 10px 38px;
+}
+
+.event-group .event-area {
+  width: 100%;
+  height: 256px;
+}
+
+.event-group .event-img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-group .event-time {
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .event-group .event-time {
+    position: absolute;
+    right: 0px;
+    top: -130%;
+    width: 65px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.event-group .num-group {
+  height: 180px;
+}
+
+@media (min-width: 992px) {
+  .event-group .num-group {
+    height: 256px;
+  }
+}
+
+.event-group .price-type-group a {
+  padding-bottom: 0.2rem;
+  background: -webkit-gradient(linear, right top, left top, from(#E31277), to(#E31277));
+  background: -o-linear-gradient(right, #E31277, #E31277);
+  background: linear-gradient(to left, #E31277, #E31277);
+  background-repeat: no-repeat;
+  background-position: 0 90%;
+  background-size: 0 0.1rem;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.event-group .price-type-group a:hover, .event-group .price-type-group a.active {
+  background-size: 100% 0.1rem;
+}
+
+.event-group .wall-img {
+  width: 100%;
+  height: 400px;
+}
+
+.event-group .side-img {
+  height: 559px;
 }
 
 .align-baseline {
@@ -12297,6 +12359,12 @@ body {
   .d-sm-none {
     display: none !important;
   }
+  .border-end-sm {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-sm-0 {
+    border-right: 0 !important;
+  }
   .flex-sm-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -14128,6 +14196,12 @@ body {
   }
   .d-md-none {
     display: none !important;
+  }
+  .border-end-md {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-md-0 {
+    border-right: 0 !important;
   }
   .flex-md-fill {
     -webkit-box-flex: 1 !important;
@@ -15961,6 +16035,12 @@ body {
   .d-lg-none {
     display: none !important;
   }
+  .border-end-lg {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-lg-0 {
+    border-right: 0 !important;
+  }
   .flex-lg-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -17793,6 +17873,12 @@ body {
   .d-xl-none {
     display: none !important;
   }
+  .border-end-xl {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-xl-0 {
+    border-right: 0 !important;
+  }
   .flex-xl-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -19624,6 +19710,12 @@ body {
   }
   .d-xxl-none {
     display: none !important;
+  }
+  .border-end-xxl {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-xxl-0 {
+    border-right: 0 !important;
   }
   .flex-xxl-fill {
     -webkit-box-flex: 1 !important;

@@ -9207,6 +9207,42 @@ p {
      object-fit: cover;
 }
 
+.cart-group {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cart-group {
+    width: 540px;
+  }
+}
+
+.cart-group .cart-content .close {
+  top: 6px;
+  left: 4px;
+}
+
+.cart-group .cart-img {
+  width: 120px;
+  height: 120px;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: transparent;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background-color: #E31277;
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
 .modal .modal-header {
   border-top: 0.4rem solid #E31277;
 }

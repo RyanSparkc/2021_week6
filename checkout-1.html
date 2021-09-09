@@ -46,7 +46,7 @@
 
 <body>
   <!-- class 裡面 -->
-<!-- d-block -->
+<!-- d-none -->
 
 <div class="topNavBar border-bottom border-gray-600">
   <div class="container">
@@ -71,7 +71,7 @@
     </header>
   </div>
 </div>
-  <!--  -->
+  <!--  hidden  -->
 <section class="banner bg-cover  d-none ">
   <div class="container h-100 text-white d-flex align-items-end align-items-md-center px-xxl pb-md-10">
     <div class="row flex-grow-1 mb-20 mb-md-0">
@@ -88,7 +88,7 @@
 </section>
 
  
-  <div class="nav-scroller border-bottom border-gray-600 sticky-md-top  true">
+  <div class="nav-scroller border-bottom border-gray-600 sticky-md-top  d-none">
   <ul class="scrollmenu nav">
     <li class="nav-item me-mdx1">
       <a class="nav-link scrollmenu_link py-14o px-18o" href="#">音樂</a>
@@ -119,102 +119,275 @@
     </li>
   </ul>
 </div>
-  <section>
-  <div class="event-group pt-lg-20">
-    <div class="container">
-      <div class="row mb-10">
-        <div class="col-lg-6">
-          <div class="event-group position-relative d-flex align-items-center mb-lg-2">
-            <div class="event-area position-relative">
-              <img class="event-img" src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
-            </div>
-            <!-- <div class="event-time fw-bolder position-absolute align-self-lg-center align-self-end text-dark text-lg-white fs-lg-2 d-flex d-lg-block align-items-center">
-              <p class="">01</p>
-              <p class="">JUN</p>
-              <p class="wrm-lr wrm-lg-unset">|</p>
-              <p class="">31</p>
-              <p class="">OCT</p>
-            </div> -->
-          </div>
-          <div class="event-content mt-10o position-relative">
-            <div class="d-flex justify-content-between align-items-center mb-2 mb-lg-1">
-              <h2 class="fs-2 mb-0">2020 台味設計展 <i class="fab fa-facebook text-dark"></i></h2>
-              <div
-                   class="event-time fw-bolder text-dark text-lg-white fs-xs fs-lg-2 d-flex d-lg-block align-items-center ">
-                <p>01</p>
-                <p>JUN</p>
-                <p class="wrm-lr wrm-lg-unset mx-0">|</p>
-                <p>31</p>
-                <p>OCT</p>
-              </div>
-            </div>
-            <p>一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="row mb-11">
-            <div
-                 class="col-lg-6 num-group d-flex justify-content-center flex-column border-end-0 border-end-lg border-lg-2">
-              <div class="d-flex justify-content-center align-items-center mb-6">
-                <a href="#"><span class="material-icons me-10 text-dark">remove</span></a>
-                <p class="fs-6 fw-bold">01</p>
-                <a href="#"><span class="material-icons ms-10 text-dark">add</span></a>
-              </div>
-              <p class="text-center">張</p>
-            </div>
-            <div class="col-lg-6 price-group d-flex justify-content-center flex-column">
-              <div class="d-flex justify-content-center align-items-center mb-6">
-                <p class="fs-6 fw-bold">NT$350</p>
-              </div>
-              <p class="text-center mb-2">票種</p>
-              <div class="price-type-group d-flex justify-content-center">
-                <a class="text-dark px-5" href="#">學生</a>
-                <a class="text-dark px-5 active" href="#">全票</a>
-                <a class="text-dark px-5" href="#">愛心</a>
-              </div>
+  
+<section class="checkout-group">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row g-0 timeline position-relative pt-5 pb-7 pt-lg-5 pb-lg-7">
+          <div class="col-3 item active">
+            <div class="timeline-point">
+              <p class="fs-xs fs-lg-1">確認訂單</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <a class="btn btn-outline-secondary w-100 py-10o" href="#">收藏展覽</a>
-            </div>
-            <div class="col">
-              <a class="btn btn-secondary w-100 py-10o" href="#">購買票券</a>
+          <div class="col-3 item">
+            <div class="timeline-point">
+              <p class="fs-xs fs-lg-1">填寫訂購資訊</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 mb-8">
-          <img class="wall-img" src="./assets/images/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg" alt="">
-        </div>
-        <div class="col-lg-4 mb-2 mb-lg-0">
-          <div>
-            <img class="side-img" src="./assets/images/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg" alt="">
+          <div class="col-3 item">
+            <div class="timeline-point">
+              <p class="fs-xs fs-lg-1">填寫付款資訊</p>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-8 order-first order-lg-0">
-          <div>
-            <h2 class="fw-bold fs-2 mb-1">藝饗宴</h2>
-            <h3 class="fw-bold fs-2 mb-3">Celebration of Style and Art</h3>
-            <div class="text-gray-600 fw-light">
-              <p class="mb-4">
-                匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。
-              </p>
-              <p class="mb-4">從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
-                等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death
-                NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo
-                的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。</p>
+          <div class="col-3 item">
+            <div class="timeline-point">
+              <p class="fs-xs fs-lg-1">完成訂購</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <ul class="checkCart">
+          <li class="mb-5">
+            <div class="d-flex align-items-center">
+              <div class="col-6 col-lg-3 pe-lg-3 pe-xl-0">
+                <img class="checkCart-img" src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
+              </div>
+              <!-- desktop -->
+              <div class="col d-none d-lg-flex">
+                <div class="col-lg-4">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                  <p class="fs-1 fw-light">全票</p>
+                </div>
+                <div class="col d-flex justify-content-between align-items-center">
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="material-icons me-0 me-lg-3 text-dark">remove</a>
+                    <p class="fs-2 fw-bold">01</p>
+                    <a href="#" class="material-icons ms-0 ms-lg-3 text-dark">add</a>
+                  </div>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+              </div>
+              <!-- mobile -->
+              <div class="col-6 d-flex flex-column d-lg-none ps-15o">
+                <div class="d-flex justify-content-between">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+                <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                <div class="d-flex justify-content-between">
+                  <p class="fs-1 fw-light">全票 <span class="fs-2 fw-bolder">1</span></p>
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mb-5">
+            <div class="d-flex align-items-center">
+              <div class="col-6 col-lg-3 pe-lg-3 pe-xl-0">
+                <img class="checkCart-img" src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
+              </div>
+              <!-- desktop -->
+              <div class="col d-none d-lg-flex">
+                <div class="col-lg-4">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                  <p class="fs-1 fw-light">全票</p>
+                </div>
+                <div class="col d-flex justify-content-between align-items-center">
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="material-icons me-0 me-lg-3 text-dark">remove</a>
+                    <p class="fs-2 fw-bold">01</p>
+                    <a href="#" class="material-icons ms-0 ms-lg-3 text-dark">add</a>
+                  </div>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+              </div>
+              <!-- mobile -->
+              <div class="col-6 d-flex flex-column d-lg-none ps-15o">
+                <div class="d-flex justify-content-between">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+                <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                <div class="d-flex justify-content-between">
+                  <p class="fs-1 fw-light">全票 <span class="fs-2 fw-bolder">1</span></p>
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mb-5">
+            <div class="d-flex align-items-center">
+              <div class="col-6 col-lg-3 pe-lg-3 pe-xl-0">
+                <img class="checkCart-img" src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg" alt="">
+              </div>
+              <!-- desktop -->
+              <div class="col d-none d-lg-flex">
+                <div class="col-lg-4">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                  <p class="fs-1 fw-light">全票</p>
+                </div>
+                <div class="col d-flex justify-content-between align-items-center">
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="material-icons me-0 me-lg-3 text-dark">remove</a>
+                    <p class="fs-2 fw-bold">01</p>
+                    <a href="#" class="material-icons ms-0 ms-lg-3 text-dark">add</a>
+                  </div>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+              </div>
+              <!-- mobile -->
+              <div class="col-6 d-flex flex-column d-lg-none ps-15o">
+                <div class="d-flex justify-content-between">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+                <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                <div class="d-flex justify-content-between">
+                  <p class="fs-1 fw-light">全票 <span class="fs-2 fw-bolder">1</span></p>
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mb-5">
+            <div class="d-flex align-items-center">
+              <div class="col-6 col-lg-3 pe-lg-3 pe-xl-0">
+                <img class="checkCart-img" src="./assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" alt="">
+              </div>
+              <!-- desktop -->
+              <div class="col d-none d-lg-flex">
+                <div class="col-lg-4">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                  <p class="fs-1 fw-light">全票</p>
+                </div>
+                <div class="col d-flex justify-content-between align-items-center">
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="material-icons me-0 me-lg-3 text-dark">remove</a>
+                    <p class="fs-2 fw-bold">01</p>
+                    <a href="#" class="material-icons ms-0 ms-lg-3 text-dark">add</a>
+                  </div>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+              </div>
+              <!-- mobile -->
+              <div class="col-6 d-flex flex-column d-lg-none ps-15o">
+                <div class="d-flex justify-content-between">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+                <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                <div class="d-flex justify-content-between">
+                  <p class="fs-1 fw-light">全票 <span class="fs-2 fw-bolder">1</span></p>
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mb-5">
+            <div class="d-flex align-items-center">
+              <div class="col-6 col-lg-3 pe-lg-3 pe-xl-0">
+                <img class="checkCart-img" src="./assets/images/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg" alt="">
+              </div>
+              <!-- desktop -->
+              <div class="col d-none d-lg-flex">
+                <div class="col-lg-4">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                  <p class="fs-1 fw-light">全票</p>
+                </div>
+                <div class="col d-flex justify-content-between align-items-center">
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="material-icons me-0 me-lg-3 text-dark">remove</a>
+                    <p class="fs-2 fw-bold">01</p>
+                    <a href="#" class="material-icons ms-0 ms-lg-3 text-dark">add</a>
+                  </div>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+              </div>
+              <!-- mobile -->
+              <div class="col-6 d-flex flex-column d-lg-none ps-15o">
+                <div class="d-flex justify-content-between">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+                <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                <div class="d-flex justify-content-between">
+                  <p class="fs-1 fw-light">全票 <span class="fs-2 fw-bolder">1</span></p>
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mb-5">
+            <div class="d-flex align-items-center">
+              <div class="col-6 col-lg-3 pe-lg-3 pe-xl-0">
+                <img class="checkCart-img" src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt="">
+              </div>
+              <!-- desktop -->
+              <div class="col d-none d-lg-flex">
+                <div class="col-lg-4">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                  <p class="fs-1 fw-light">全票</p>
+                </div>
+                <div class="col d-flex justify-content-between align-items-center">
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="material-icons me-0 me-lg-3 text-dark">remove</a>
+                    <p class="fs-2 fw-bold">01</p>
+                    <a href="#" class="material-icons ms-0 ms-lg-3 text-dark">add</a>
+                  </div>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+              </div>
+              <!-- mobile -->
+              <div class="col-6 d-flex flex-column d-lg-none ps-15o">
+                <div class="d-flex justify-content-between">
+                  <h3 class="fw-bold fs-1 mb-1">2020 台味設計展</h3>
+                  <button type="button" class="btn btn-close pe-4"></button>
+                </div>
+                <p class="fw-bold fs-1 mb-1">01 JUN—31 OCT</p>
+                <div class="d-flex justify-content-between">
+                  <p class="fs-1 fw-light">全票 <span class="fs-2 fw-bolder">1</span></p>
+                  <p class=" checkCart-price fs-2 fw-bold">NT$ 350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+     
+    </div>
+    <div class="row">
+      <div class="col-lg-4 d-flex flex-column justify-content-end pb-10 mt-lg-10 ms-lg-auto">
+        <div class="fs-2 fw-bolder d-flex justify-content-between mb-3 mb-lg-0 ">
+          <p>小計</p>
+          <p>NT$1050</p>
+        </div>
+        <div class="col-6 offset-6 offset-lg-0 col-lg-12">
+          <a href="./checkout-2.html" class="btn btn-lg btn-secondary text-white px-auto w-100">下一步</a>
+        </div>
+      </div>
+    </div>
   </div>
+
 </section>
   <!--section like 輪播-->
 <!--swiper-->
-<div class="container mb-12 overflow-hidden  true">
+<div class="container mb-12 overflow-hidden  d-none">
   <h2 class="fs-5 fw-bolder mt-4 mt-md-12 mb-4 mb-md-6">猜你也喜歡...</h2>
   <div class="row">
     <div class="col-12 col-md-11 offset-md-1">
@@ -328,7 +501,7 @@
   </div>
 </div>
   <!--subscribe 下方banner-->
-<section class="subscribe_bg bg-cover d-flex align-items-end  true">
+<section class="subscribe_bg bg-cover d-flex align-items-end  d-none">
   <div class="container">
     <div class="row mb-3">
       <h2 class="text-white fs-5 fw-bolder mb-3">想收到最新消息嗎？<br> 快訂閱我們！</h2>
@@ -341,7 +514,7 @@
   </div>
 </section>
   <!--footer-->
-<footer class=" true">
+<footer class=" d-none">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-md-center flex-column flex-md-row ">

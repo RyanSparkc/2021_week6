@@ -14,12 +14,12 @@ current: checkout
               <p class="fs-xs fs-lg-1">確認訂單</p>
             </div>
           </div>
-          <div class="col-3 item active">
+          <div class="col-3 item">
             <div class="timeline-point">
               <p class="fs-xs fs-lg-1">填寫訂購資訊</p>
             </div>
           </div>
-          <div class="col-3 item">
+          <div class="col-3 item active">
             <div class="timeline-point">
               <p class="fs-xs fs-lg-1">填寫付款資訊</p>
             </div>
@@ -150,21 +150,16 @@ current: checkout
         <div class="flex-grow-1 mb-13 mb-lg-0">
           <form class="row g-3">
             <div class="col-12 mb-5">
-              <label for="user-email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="user-email" placeholder="example@gmail.com">
+              <label for="card-nums" class="form-label">信用卡帳號</label>
+              <input type="text" class="form-control" id="card-nums" placeholder="Xxxx-xxxx-xxxx-xxxx">
             </div>
             <div class="col-12 mb-5">
-              <label for="user-name" class="form-label">姓名</label>
-              <input type="password" class="form-control" id="user-name" placeholder="請輸入姓名">
+              <label for="card-date" class="form-label">有效日期</label>
+              <input type="date" class="form-control" id="card-date" placeholder="(MM/YY)">
             </div>
             <div class="col-12 mb-5">
-              <label for="user-phone" class="form-label">聯絡電話</label>
-              <input type="text" class="form-control" id="user-phone" placeholder="請輸入電話">
-            </div>
-            <div class="col-12 mb-5">
-              <label for="user-cupoon" class="form-label">優惠碼</label>
-              <input type="text" class="form-control" id="user-cupoon" placeholder="TG87526">
-              <p class="text-end text-primary mt-1">優惠碼已生效</p>
+              <label for="card-sec" class="form-label">安全碼</label>
+              <input type="text" class="form-control" id="card-sec" placeholder="***">
             </div>
           </form>
         </div>
@@ -186,10 +181,10 @@ current: checkout
     </div>
     <div class="row">
       <div class="col">
-        <a href="./checkout-1.html" class="btn btn-lg btn-outline-secondary px-auto">返回</a>
+        <a href="./checkout-2.html" class="btn btn-lg btn-outline-secondary px-auto">返回</a>
       </div>
       <div class="col-4">
-        <a href="./checkout-3.html" class="btn btn-lg btn-secondary text-white px-auto w-100">下一步</a>
+        <a href="./checkout-4.html" class="btn btn-lg btn-secondary text-white px-auto w-100">下一步</a>
       </div>
     </div>
   </div>

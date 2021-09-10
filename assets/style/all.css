@@ -9456,8 +9456,13 @@ body {
 }
 
 .checkCart {
-  height: 550px;
   overflow-y: auto;
+}
+
+@media (min-width: 992px) {
+  .checkCart {
+    height: 550px;
+  }
 }
 
 .checkCart-img {

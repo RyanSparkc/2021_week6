@@ -119,8 +119,7 @@
     </li>
   </ul>
 </div>
-  
-<section class="checkout-group mb-10">
+  <section class="checkout-group mb-10">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
@@ -149,8 +148,8 @@
       </div>
     </div>
     <div class="row d-flex justify-content-between">
-      <div class="col-lg-8">
-        <ul class="checkCart">
+      <div class="col-lg-8 d-flex flex-column justify-content-between">
+        <ul class="checkCart flex-grow-1">
           <li class="mb-5">
             <div class="d-flex align-items-center">
               <div class="col-6 col-lg-3 pe-lg-3 pe-xl-0">
@@ -260,26 +259,55 @@
             </div>
           </li>
         </ul>
-        <div class="col">
-          <a href="./checkout-2.html" class="btn btn-lg btn-outline-secondary px-auto">返回</a>
-        </div>
       </div>
-      <div class="col-lg-4 d-flex flex-column pb-10 mt-lg-10 ms-lg-auto">
-
-
-
-
-        <div class="fs-2 fw-bolder d-flex justify-content-between mb-3 mb-lg-0 ">
-          <p>小計</p>
-          <p>NT$1050</p>
+      <div class="col-lg-4 d-flex flex-column order-first order-lg-0">
+        <h3 class="fs-2 fw-bold mb-5">付款資訊</h3>
+        <div class="flex-grow-1 mb-13 mb-lg-0">
+          <form class="row g-3">
+            <div class="col-12 mb-5">
+              <label for="user-email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="user-email" placeholder="example@gmail.com">
+            </div>
+            <div class="col-12 mb-5">
+              <label for="user-name" class="form-label">姓名</label>
+              <input type="password" class="form-control" id="user-name" placeholder="請輸入姓名">
+            </div>
+            <div class="col-12 mb-5">
+              <label for="user-phone" class="form-label">聯絡電話</label>
+              <input type="text" class="form-control" id="user-phone" placeholder="請輸入電話">
+            </div>
+            <div class="col-12 mb-5">
+              <label for="user-cupoon" class="form-label">優惠碼</label>
+              <input type="text" class="form-control" id="user-cupoon" placeholder="TG87526">
+              <p class="text-end text-primary mt-1">優惠碼已生效</p>
+            </div>
+          </form>
         </div>
-        <div class="col-6 offset-6 offset-lg-0 col-lg-12">
-          <a href="./checkout-2.html" class="btn btn-lg btn-secondary text-white px-auto w-100">下一步</a>
+        <div class="mt-auto mb-6 mb-lg-0">
+          <div class="fs-1 d-flex justify-content-between mb-2 mt-auto">
+            <p>小計</p>
+            <p>NT$1050</p>
+          </div>
+          <div class="fs-1 fw-bolder d-flex justify-content-between mb-2 mt-auto">
+            <p>折扣</p>
+            <p>-NT$50</p>
+          </div>
+          <div class="fs-2 fw-bolder d-flex justify-content-between mb-3 mt-auto">
+            <p>總金額</p>
+            <p>NT$1000</p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <a href="./checkout-1.html" class="btn btn-lg btn-outline-secondary px-auto">返回</a>
+      </div>
+      <div class="col-4">
+        <a href="./checkout-3.html" class="btn btn-lg btn-secondary text-white px-auto w-100">下一步</a>
+      </div>
+    </div>
   </div>
-
 </section>
   <!--section like 輪播-->
 <!--swiper-->
@@ -403,8 +431,8 @@
       <h2 class="text-white fs-5 fw-bolder mb-3">想收到最新消息嗎？<br> 快訂閱我們！</h2>
       <div class="subscribe_mail input-group mb-3">
         <input type="text" class="form-control border border-0" placeholder="請輸入您的電子信箱"
-          aria-label="Recipient's username" aria-describedby="basic-addon2">
-         <a href="#" type="button" class="btn text-white btn-secondary rounded-end py-3 px-13">訂閱</a>
+               aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <a href="#" class="btn text-white btn-secondary rounded-end py-3 px-13">訂閱</a>
       </div>
     </div>
   </div>
@@ -594,6 +622,8 @@
     <a href="./checkout-1.html" class="btn btn-lg btn-white text-primary fs-1">前往結帳</a>
   </div>
 </div>
+
+
   
   <!--swiper-->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
